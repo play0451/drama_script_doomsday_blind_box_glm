@@ -1,0 +1,2 @@
+# drama_script_doomsday_blind_box_glm
+短句剧本 末日物资全靠开盲盒_GLM
