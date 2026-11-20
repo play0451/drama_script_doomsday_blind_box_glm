@@ -1,0 +1,8 @@
+# 机检临时输出
+_e*_check.txt
+_check.txt
+*.tmp
+
+# 系统文件
+Thumbs.db
+desktop.ini
