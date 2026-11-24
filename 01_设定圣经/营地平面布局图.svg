@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1380" width="1080" height="1380" font-family="Microsoft YaHei, PingFang SC, SimHei, sans-serif">
+  <defs>
+    <radialGradient id="warmGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9d2e" stop-opacity="0.34"/>
+      <stop offset="65%" stop-color="#ffb84d" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#ffb84d" stop-opacity="0.0"/>
+    </radialGradient>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#f87171"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#4ade80"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1380" fill="#0f172a"/>
+
+  <!-- Title Bar -->
+  <text x="540" y="38" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="bold">《末日物资全靠开盲盒》营地空间平面拓扑图 v4（审核定稿版）</text>
+  <text x="540" y="64" text-anchor="middle" fill="#94a3b8" font-size="13">城郊大型仓储超市（主厅60m×65m ＋ 仓库60m×55m）｜ 非等比空间拓扑示意（小房间适度放大以便标注）</text>
+
+  <!-- Roof / Backup Note -->
+  <rect x="140" y="86" width="520" height="34" fill="#1e293b" stroke="#475569" stroke-width="1.2" stroke-dasharray="6,4"/>
+  <text x="400" y="108" text-anchor="middle" fill="#94a3b8" font-size="12">建筑屋顶：天台（S1极少用·备用区）</text>
+
+  <!-- ==================== 1. 仓库（盲盒矿场 · 60m×55m） ==================== -->
+  <rect x="140" y="128" width="520" height="432" fill="#171f2e" stroke="#64748b" stroke-width="3"/>
+
+  <!-- Warehouse Title shifted right so it never overlaps northwest purple corner -->
+  <text x="498" y="156" text-anchor="middle" fill="#cbd5e1" font-size="16" font-weight="bold">仓库（盲盒矿场 · 60m × 55m）</text>
+  <text x="498" y="176" text-anchor="middle" fill="#64748b" font-size="12">存放已入库陈货与每日搬入新箱</text>
+
+  <!-- Funeral Set Deep Corner (Northwest) -->
+  <rect x="154" y="144" width="184" height="48" rx="4" fill="#311c2b" stroke="#c084fc" stroke-width="1.5"/>
+  <text x="246" y="164" text-anchor="middle" fill="#e9d5ff" font-size="12" font-weight="bold">仓库最深处角落</text>
+  <text x="246" y="182" text-anchor="middle" fill="#d8b4fe" font-size="10">E21起暂存丧葬三件(约72~84m·圈外)</text>
+
+  <!-- Warehouse Racks Left -->
+  <g fill="#263145" stroke="#475569" stroke-width="1.2">
+    <rect x="158" y="212" width="164" height="36" rx="2"/>
+    <rect x="158" y="274" width="164" height="36" rx="2"/>
+    <rect x="158" y="336" width="164" height="36" rx="2"/>
+    <rect x="158" y="398" width="164" height="36" rx="2"/>
+    <rect x="158" y="460" width="164" height="36" rx="2"/>
+  </g>
+  <text x="240" y="297" text-anchor="middle" fill="#94a3b8" font-size="12">重型铁货架区（前日陈货）</text>
+  <text x="240" y="421" text-anchor="middle" fill="#94a3b8" font-size="12">E25众人冲向后排抢陈货</text>
+
+  <!-- Warehouse Racks Right -->
+  <g fill="#263145" stroke="#475569" stroke-width="1.2">
+    <rect x="478" y="200" width="162" height="36" rx="2"/>
+    <rect x="478" y="460" width="162" height="36" rx="2"/>
+  </g>
+  <text x="559" y="223" text-anchor="middle" fill="#94a3b8" font-size="11">大柜/重货架区</text>
+  <text x="559" y="483" text-anchor="middle" fill="#94a3b8" font-size="11">袋/箱分类存放架</text>
+
+  <!-- Warehouse Central Corridor + Side Branch -->
+  <rect x="345" y="198" width="110" height="352" fill="#1e293b" opacity="0.6"/>
+  <rect x="455" y="275" width="197" height="150" fill="#1e293b" opacity="0.5"/>
+  <text x="400" y="355" text-anchor="middle" fill="#64748b" font-size="12" writing-mode="tb">仓库中央通道</text>
+
+  <!-- Shutter horizontal label cleanly positioned above the east shutter lane -->
+  <text x="646" y="264" text-anchor="end" fill="#fde047" font-size="12" font-weight="bold">侧面大铁皮卷帘门（夜锁晨开）▼</text>
+
+  <!-- E30 Camera Position inside Warehouse facing Roller Shutter -->
+  <rect x="482" y="314" width="52" height="26" rx="3" fill="#7f1d1d" stroke="#f87171" stroke-width="1.5"/>
+  <text x="508" y="331" text-anchor="middle" fill="#fecaca" font-size="10" font-weight="bold">E30机位</text>
+  <line x1="538" y1="327" x2="688" y2="327" stroke="#f87171" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrowRed)"/>
+  <text x="598" y="306" text-anchor="middle" fill="#fca5a5" font-size="10">仓内切镜直拍卷帘门外</text>
+
+  <!-- ==================== 侧面大铁皮卷帘门 + 卸货月台 + 外侧空巷 ==================== -->
+  <rect x="652" y="275" width="16" height="150" fill="#eab308" stroke="#fef08a" stroke-width="2"/>
+
+  <!-- Covered Outdoor Loading Dock -->
+  <rect x="668" y="232" width="166" height="236" fill="#292524" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="751" y="256" text-anchor="middle" fill="#fcd34d" font-size="13" font-weight="bold">室外卸货月台（带防雨顶棚）</text>
+
+  <!-- E30 Courier Back-View Icon with Large Smiley Emblem -->
+  <rect x="696" y="312" width="22" height="26" rx="4" fill="#334155" stroke="#f87171" stroke-width="1.5"/>
+  <circle cx="707" cy="325" r="7" fill="none" stroke="#fde047" stroke-width="1.4"/>
+  <circle cx="704.5" cy="323.5" r="1" fill="#fde047"/>
+  <circle cx="709.5" cy="323.5" r="1" fill="#fde047"/>
+  <path d="M 704 327 Q 707 330 710 327" fill="none" stroke="#fde047" stroke-width="1.2"/>
+  <text x="726" y="318" text-anchor="start" fill="#fca5a5" font-size="10" font-weight="bold">★ E30快递员背影</text>
+  <text x="726" y="334" text-anchor="start" fill="#fecaca" font-size="9">后背大笑脸·卷帘门落下挡住</text>
+
+  <!-- New Boxes stacked on loading dock -->
+  <rect x="688" y="370" width="126" height="76" rx="3" fill="#78350f" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="751" y="394" text-anchor="middle" fill="#fef3c7" font-size="11" font-weight="bold">夜补新箱（清晨码放区）</text>
+  <text x="751" y="414" text-anchor="middle" fill="#fde68a" font-size="10">E24缺角 / E25空地</text>
+  <text x="751" y="432" text-anchor="middle" fill="#86efac" font-size="10">E29清晨平静搬箱入库</text>
+
+  <!-- Move-in Arrow -->
+  <path d="M 684 405 L 490 405" fill="none" stroke="#4ade80" stroke-width="2.2" stroke-dasharray="5,3" marker-end="url(#arrowGreen)"/>
+  <text x="580" y="396" text-anchor="middle" fill="#86efac" font-size="11" font-weight="bold">清晨拉开搬箱入库</text>
+
+  <!-- Outer Dark Alley -->
+  <rect x="834" y="128" width="210" height="432" fill="#090d16" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="939" y="290" text-anchor="middle" fill="#94a3b8" font-size="14" font-weight="bold">超市外侧空巷</text>
+  <text x="939" y="315" text-anchor="middle" fill="#64748b" font-size="11">· E1 [外景·卷帘门前] 审判场</text>
+  <text x="939" y="338" text-anchor="middle" fill="#64748b" font-size="11">· E24 死暗寒风空巷(断补前夜)</text>
+  <text x="939" y="361" text-anchor="middle" fill="#64748b" font-size="11">· S2 秃鹫帮外部接近接口</text>
+
+  <!-- ==================== 卖场与仓库隔墙（双开防撞理货门 · 默认闭合） ==================== -->
+  <line x1="140" y1="560" x2="660" y2="560" stroke="#94a3b8" stroke-width="4"/>
+  <rect x="355" y="551" width="90" height="18" fill="#38bdf8" stroke="#e0f2fe" stroke-width="1.5"/>
+  <text x="400" y="544" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="bold">双开金属防撞理货门（默认闭合·弹簧自动回关）</text>
+
+  <!-- ==================== 2. 卖场主厅（60m×65m） ==================== -->
+  <rect x="140" y="560" width="520" height="520" fill="#1e2536" stroke="#94a3b8" stroke-width="3"/>
+
+  <!-- Warm Circle (Concentric with Stove at 425, 818) -->
+  <circle cx="425" cy="818" r="205" fill="url(#warmGlow)" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,5" opacity="0.85"/>
+  <text x="425" y="632" text-anchor="middle" fill="#fbbf24" font-size="12">永燃铜灶自然暖光范围（直径50m / 半径25m，无硬边界）</text>
+
+  <!-- Main Central Aisle -->
+  <rect x="360" y="565" width="90" height="512" fill="#283347" opacity="0.7"/>
+  <text x="405" y="1055" text-anchor="middle" fill="#cbd5e1" font-size="12">主过道（南北贯通）</text>
+
+  <!-- E5 Generator + Electrical Panel -->
+  <rect x="478" y="574" width="160" height="32" rx="3" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="558" y="594" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="bold">E5自持发电机 ＋ 主厅配电箱</text>
+
+  <!-- 断电生鲜区（西北暗冷角落） -->
+  <rect x="144" y="564" width="155" height="150" fill="#0c192c" stroke="#38bdf8" stroke-width="2"/>
+  <text x="221" y="590" text-anchor="middle" fill="#7dd3fc" font-size="14" font-weight="bold">断电生鲜区</text>
+  <text x="221" y="610" text-anchor="middle" fill="#64748b" font-size="11">常年漆黑阴冷</text>
+  <rect x="158" y="625" width="55" height="24" fill="#1e293b" stroke="#475569"/>
+  <rect x="225" y="625" width="55" height="24" fill="#1e293b" stroke="#475569"/>
+  <!-- Bingbing -->
+  <rect x="160" y="662" width="64" height="38" rx="4" fill="#0284c7" stroke="#bae6fd" stroke-width="2"/>
+  <text x="192" y="685" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">冰冰(家)</text>
+  <!-- Plastic Cold Curtain at entrance -->
+  <line x1="299" y1="650" x2="299" y2="710" stroke="#7dd3fc" stroke-width="4" stroke-dasharray="5,3"/>
+  <text x="304" y="644" text-anchor="start" fill="#bae6fd" font-size="9">防冷门帘(隔暖光)</text>
+  <path d="M 228 680 L 325 680 L 325 734" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrowBlue)"/>
+  <text x="275" y="728" text-anchor="middle" fill="#7dd3fc" font-size="10">带轮推出路线</text>
+
+  <!-- 核心区三件套（过道西侧墙） -->
+  <line x1="305" y1="742" x2="305" y2="824" stroke="#e2e8f0" stroke-width="5"/>
+  <text x="296" y="782" text-anchor="end" fill="#f8fafc" font-size="11" font-weight="bold">公告栏</text>
+  <text x="296" y="797" text-anchor="end" fill="#94a3b8" font-size="10">(唯一墙面)</text>
+  <rect x="310" y="748" width="22" height="70" fill="#b45309" stroke="#fde68a" stroke-width="1.5"/>
+  <text x="321" y="741" text-anchor="middle" fill="#fef3c7" font-size="10" font-weight="bold">长桌(袋/箱)</text>
+  <rect x="338" y="756" width="46" height="54" rx="3" fill="#d97706" stroke="#fef08a" stroke-width="2"/>
+  <text x="361" y="780" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">开盒</text>
+  <text x="361" y="795" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">地台</text>
+  <text x="361" y="827" text-anchor="middle" fill="#fde047" font-size="10">(15cm高·开大柜)</text>
+
+  <!-- Hotpot Eternal Stove (E21+) -->
+  <circle cx="425" cy="818" r="22" fill="#dc2626" stroke="#fde047" stroke-width="2.5"/>
+  <text x="425" y="815" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">永燃</text>
+  <text x="425" y="829" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">铜灶</text>
+  <text x="425" y="854" text-anchor="middle" fill="#fca5a5" font-size="10">(E21起主厅中心)</text>
+
+  <!-- 1平米直播间（无门卡位，独立摆在过道旁，不压西侧货架） -->
+  <rect x="310" y="925" width="46" height="46" fill="#334155" stroke="#fbbf24" stroke-width="2"/>
+  <!-- Open East side -->
+  <line x1="356" y1="930" x2="356" y2="966" stroke="#334155" stroke-width="3"/>
+  <!-- North Wall: Curve Chart -->
+  <line x1="310" y1="925" x2="356" y2="925" stroke="#ef4444" stroke-width="3.5"/>
+  <text x="333" y="917" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="bold">北侧墙：苏小算曲线图</text>
+  <!-- West Wall: Empty Blind Box Wall -->
+  <line x1="310" y1="925" x2="310" y2="971" stroke="#facc15" stroke-width="3"/>
+  <text x="333" y="946" text-anchor="middle" fill="#fef08a" font-size="10" font-weight="bold">1㎡</text>
+  <text x="333" y="960" text-anchor="middle" fill="#fef08a" font-size="10" font-weight="bold">直播间</text>
+  <text x="333" y="986" text-anchor="middle" fill="#cbd5e1" font-size="9.5">(无门·西背板为空盲盒墙)</text>
+
+  <!-- 货架区集体宿舍（西侧，与直播间拉开间距） -->
+  <g fill="#2d3748" stroke="#64748b" stroke-width="1.2">
+    <rect x="155" y="750" width="108" height="26"/>
+    <rect x="155" y="800" width="108" height="26"/>
+    <rect x="155" y="852" width="108" height="26"/>
+    <rect x="155" y="904" width="108" height="26"/>
+    <rect x="155" y="956" width="108" height="26"/>
+    <rect x="155" y="1008" width="108" height="26"/>
+  </g>
+  <!-- 99 Notes Wall placed clearly at y=852 -->
+  <line x1="155" y1="852" x2="263" y2="852" stroke="#facc15" stroke-width="3.5"/>
+  <text x="209" y="846" text-anchor="middle" fill="#fef08a" font-size="10.5" font-weight="bold">★ 99张谢谢参与纸条墙</text>
+  <text x="209" y="1056" text-anchor="middle" fill="#94a3b8" font-size="11.5">货架格子铺宿舍区（纸箱+毯子）</text>
+
+  <!-- 货架区集体宿舍（东侧） -->
+  <g fill="#2d3748" stroke="#64748b" stroke-width="1.2">
+    <rect x="475" y="645" width="165" height="28"/>
+    <rect x="475" y="705" width="165" height="28"/>
+    <rect x="475" y="765" width="165" height="28"/>
+    <rect x="475" y="825" width="165" height="28"/>
+    <rect x="475" y="885" width="165" height="28"/>
+    <rect x="475" y="945" width="165" height="28"/>
+  </g>
+  <text x="557" y="755" text-anchor="middle" fill="#94a3b8" font-size="12">货架格子铺宿舍区（共137人）</text>
+
+  <!-- 小工作间（周规矩单人办公室 · 东南角约15㎡） -->
+  <rect x="555" y="998" width="101" height="78" fill="#292524" stroke="#d97706" stroke-width="2.5"/>
+  <text x="605" y="1024" text-anchor="middle" fill="#fcd34d" font-size="13" font-weight="bold">小工作间</text>
+  <text x="605" y="1042" text-anchor="middle" fill="#fde68a" font-size="10">周规矩单人办公室</text>
+  <text x="605" y="1058" text-anchor="middle" fill="#a8a29e" font-size="10">(约15㎡·仅办公桌)</text>
+  <!-- 单扇铁门＋向内开启门扇弧线 -->
+  <rect x="551" y="1018" width="8" height="28" fill="#cbd5e1" stroke="#f8fafc" stroke-width="1"/>
+  <path d="M 559 1018 Q 582 1020 582 1046" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <text x="546" y="1036" text-anchor="end" fill="#e2e8f0" font-size="10" font-weight="bold">单扇铁门</text>
+  <!-- 侧窗 -->
+  <rect x="585" y="1076" width="42" height="7" fill="#38bdf8" stroke="#e0f2fe" stroke-width="1"/>
+  <text x="606" y="1096" text-anchor="middle" fill="#7dd3fc" font-size="10" font-weight="bold">侧窗(E18李铁柱窗外窥见)</text>
+
+  <!-- Supermarket Front Sliding Door -->
+  <rect x="355" y="1072" width="100" height="14" fill="#38bdf8" stroke="#e0f2fe" stroke-width="1.5"/>
+  <text x="405" y="1098" text-anchor="middle" fill="#bae6fd" font-size="11" font-weight="bold">超市正门（玻璃推拉门）</text>
+
+  <!-- ==================== 3. 外景·停车场 ==================== -->
+  <rect x="100" y="1106" width="600" height="210" fill="#18221e" stroke="#475569" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="380" y="1132" text-anchor="middle" fill="#86efac" font-size="15" font-weight="bold">外景 · 停车场（露天水泥地）</text>
+
+  <!-- 菜地 -->
+  <rect x="122" y="1152" width="190" height="135" rx="6" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <line x1="140" y1="1186" x2="294" y2="1186" stroke="#22c55e" stroke-width="2" stroke-dasharray="10,4"/>
+  <line x1="140" y1="1216" x2="294" y2="1216" stroke="#22c55e" stroke-width="2" stroke-dasharray="10,4"/>
+  <line x1="140" y1="1246" x2="294" y2="1246" stroke="#22c55e" stroke-width="2" stroke-dasharray="10,4"/>
+  <text x="217" y="1172" text-anchor="middle" fill="#dcfce7" font-size="14" font-weight="bold">停车场菜地</text>
+  <text x="217" y="1272" text-anchor="middle" fill="#bbf7d0" font-size="11">白菜 / 大南瓜 / 抗寒菜籽</text>
+
+  <!-- 鸡窝 -->
+  <rect x="332" y="1152" width="108" height="62" rx="4" fill="#422006" stroke="#facc15" stroke-width="1.5"/>
+  <text x="386" y="1180" text-anchor="middle" fill="#fef08a" font-size="12" font-weight="bold">简易鸡窝</text>
+  <text x="386" y="1198" text-anchor="middle" fill="#fde047" font-size="10">木栅栏围栏</text>
+
+  <!-- 一排小土包（李铁柱家事静一秒锚点） -->
+  <rect x="332" y="1224" width="108" height="63" rx="4" fill="#292524" stroke="#a8a29e" stroke-width="1.5"/>
+  <path d="M 346 1254 Q 358 1236 370 1254 M 374 1254 Q 386 1236 398 1254 M 402 1254 Q 414 1236 426 1254" fill="#57534e" stroke="#d6d3d1" stroke-width="1.2"/>
+  <text x="386" y="1276" text-anchor="middle" fill="#e7e5e4" font-size="10.5" font-weight="bold">一排小土包(E6/E19)</text>
+
+  <!-- 李铁柱看棚 -->
+  <rect x="462" y="1152" width="210" height="135" rx="4" fill="#3f2e21" stroke="#fb923c" stroke-width="2"/>
+  <text x="567" y="1202" text-anchor="middle" fill="#ffedd5" font-size="14" font-weight="bold">李铁柱看棚（独居）</text>
+  <text x="567" y="1226" text-anchor="middle" fill="#fed7aa" font-size="11">旧木板＋防雨油布＋铁皮单间</text>
+  <text x="567" y="1248" text-anchor="middle" fill="#fdba74" font-size="11">门前留「静一秒」家事戏份</text>
+
+  <!-- Footer Note -->
+  <text x="540" y="1348" text-anchor="middle" fill="#64748b" font-size="12">注：本图为非等比空间拓扑示意；卖场与仓库地面平齐无台阶，方便大刘/铁头推带轮「冰冰」全区移动；生鲜区入口挂防冷门帘隔暖光。</text>
+</svg>
