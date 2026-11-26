@@ -29,6 +29,8 @@ FICTION_FILLER = [
     "不禁", "情不自禁", "不由自主", "话音未落", "说罢", "心中暗道",
     "嘴角微扬", "指节泛白", "深吸一口气", "空气仿佛", "仿佛凝固",
 ]
+TELEGRAPH_WORDS = ["今日", "已过", "待记录", "岂容", "岂能", "足矣", "何其"]
+OMITTED_YI_HUNDRED = re.compile(r"(?<![一二三四五六七八九十零\d两])百[一二三四五六七八九]十")
 
 DEFAULT_CONFIG: dict[str, Any] = {
     "project_name": "通用短剧项目（无局部配置）",
@@ -125,6 +127,7 @@ def audit_episode(
     em_dash_dlg = 0
     filler_hits: list[tuple[int, str]] = []
     binary_hits: list[tuple[int, str]] = []
+    telegraph_hits: list[tuple[int, str]] = []
 
     for idx, l in enumerate(lines, 1):
         if l.startswith("△ "):
@@ -154,6 +157,12 @@ def audit_episode(
                 m = BINARY_CONTRAST.search(dlg)
                 if m:
                     binary_hits.append((idx, m.group(0)))
+                for tw in TELEGRAPH_WORDS:
+                    if tw in dlg:
+                        telegraph_hits.append((idx, tw))
+                ym = OMITTED_YI_HUNDRED.search(dlg)
+                if ym:
+                    telegraph_hits.append((idx, ym.group(0)))
 
         if not l.startswith(exempt_prefixes):
             for bw in forbidden_words:
@@ -183,6 +192,8 @@ def audit_episode(
         deai_warns.append(f"小说套话/不可拍词({len(filler_hits)}处): {filler_hits}")
     if binary_hits:
         deai_warns.append(f"二元对照句式({len(binary_hits)}处): {binary_hits}")
+    if telegraph_hits:
+        deai_warns.append(f"书面压缩/电报词({len(telegraph_hits)}处): {telegraph_hits}")
 
     passed = (len(hard_errs) == 0) and (not strict_deai or len(deai_warns) == 0)
     status = "FAIL" if hard_errs else ("DEAI_REVIEW" if deai_warns else "PASS")
