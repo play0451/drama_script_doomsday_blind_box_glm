@@ -2,7 +2,7 @@
   "project_name": "末日物资全靠开盲盒",
   "script_glob": "03_剧本/E*_剧本.md",
   "format_limits": {
-    "max_scenes": 2,
+    "max_scenes": 8,
     "max_action_chars": 40,
     "max_clause_chars": 35,
     "min_est_seconds": 95,
