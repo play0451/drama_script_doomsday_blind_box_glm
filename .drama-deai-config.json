@@ -1,0 +1,35 @@
+{
+  "project_name": "末日物资全靠开盲盒",
+  "script_glob": "03_剧本/E*_剧本.md",
+  "format_limits": {
+    "max_scenes": 2,
+    "max_action_chars": 40,
+    "max_clause_chars": 25,
+    "min_est_seconds": 98,
+    "max_est_seconds": 126,
+    "speech_rate_cps": 4.5,
+    "action_beat_seconds": 1.5,
+    "base_overhead_seconds": 5.0
+  },
+  "forbidden_words": [
+    "系统", "福气", "积德", "搏一把", "奖池", "自焚", "黑光", "几何光纹",
+    "数码纹", "光圈", "仓库木门", "员工区", "办公间", "公署", "袋口黑洞",
+    "休息室", "小袋", "停权", "推拉门", "冷柜", "厚箱", "重箱", "麦穗戳记",
+    "箱底标牌", "罐头铁锹", "暖黄灯泡", "昏黄灯泡", "侧门", "水泥柱",
+    "申请袋", "肉箱", "热羊肉", "死暗", "标准差", "剪线", "透支四次",
+    "应急门缝", "震飞了纸条"
+  ],
+  "forbidden_regex": [
+    { "name": "开盒值-X", "pattern": "开盒值-[125]" },
+    { "name": "它", "pattern": "它" }
+  ],
+  "max_term_counts": {
+    "家人们": 1
+  },
+  "deai_thresholds": {
+    "max_heavy_adverbs": 2,
+    "max_paren_cliches": 5,
+    "max_em_dash_dlg": 2
+  },
+  "exempt_action_prefixes": ["【"]
+}

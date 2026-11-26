@@ -1,0 +1,23 @@
+{
+  "project_name": "新短剧项目名称",
+  "script_glob": "03_剧本/E*_剧本.md",
+  "format_limits": {
+    "max_scenes": 2,
+    "max_action_chars": 40,
+    "max_clause_chars": 25,
+    "min_est_seconds": 98,
+    "max_est_seconds": 126,
+    "speech_rate_cps": 4.5,
+    "action_beat_seconds": 1.5,
+    "base_overhead_seconds": 5.0
+  },
+  "forbidden_words": [],
+  "forbidden_regex": [],
+  "max_term_counts": {},
+  "deai_thresholds": {
+    "max_heavy_adverbs": 2,
+    "max_paren_cliches": 5,
+    "max_em_dash_dlg": 2
+  },
+  "exempt_action_prefixes": ["【"]
+}
